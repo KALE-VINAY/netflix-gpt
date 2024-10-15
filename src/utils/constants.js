@@ -23,8 +23,5 @@ export const SUPPORTED_LANGUAGES = [{identifier : "en", name: "English"},
 ];  
 
 export const OPENAI_KEY = "";
-// "sk-hET3FQWQqFrBQnxjtwmWSJE0sd_OoMCKuMINh7eh4JT3BlbkFJusre7IowG0Ch61LsMjLpn0VEms6yTqdiuyzsZipUQA";
-// // "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";
-// // "sk-kKsZKMC_pTaoZWlXbHo-cYNT-OCyAylY1u9Hytr96CT3BlbkFJI2eCtsyliAJK5KK2XhfBfZRsXIwQKU-aDH05bckzMA";
 
 
