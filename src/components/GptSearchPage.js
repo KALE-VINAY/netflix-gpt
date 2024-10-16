@@ -2,8 +2,10 @@ import React from 'react'
 
 const GptSearchPage = () => {
   return (
-    <div>GptSearchPage</div>
+    <div>
+
+    </div>
   )
 }
 
-export default GptSearchPage
+export default GptSearchPage;
