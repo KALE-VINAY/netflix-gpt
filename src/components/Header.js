@@ -62,27 +62,29 @@ const Header = () => {
   };
 
   return (
-    <div className='absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex  flex-col md:flex-row justify-between '>
+    <div className='absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex  flex-row md:flex-row justify-between '>
 
 
-  <img className = "w-44 mx-auto md:mx-0" src = {LOGO}
+  <img className = "bg-gradient-to-b from-black w-20  scroll-px-32 md:px-0 -m-2 md:m-0 md:w-44  " src = {LOGO}
     alt= "logo"/>
 
-   {user && (<div className='flex p-2'>
+   {user && (<div className='flex  md:flex-row justify-between p-2'>
 
-    {showGptSearch && (<select className='p-2 m-2 bg-gray-900 text-white' onChange={handleLanguageChange}>
+    {showGptSearch && (<select className='px-2 py-2 mr-4 mx-1 mt-2 my-10 lg:my-0  bg-gray-900 text-white' onChange={handleLanguageChange}>
       {SUPPORTED_LANGUAGES.map(lang => (<option key={lang.identifier} value={lang.identifier}>
         {lang.name}
         </option>))}
     </select>)}
 
     <button 
-    className='px-4 py-2 mx-4 mt-2 bg-purple-800 text-white rounded-lg'
+    className='px-2 py-2 mr-4 md:mr-8 mx-1 mt-2 my-10 lg:my-5 bg-purple-800 text-white rounded-lg'
     onClick={handleGptSearchClick}
     >{showGptSearch ? "Homepage": "GPT SEARCH"}
     </button>
-    <img alt="usericon" src= {user?.photoURL} className='h-10 w-10 '/>
+    <div className='flex flex-col -mr-8 md:-mr-4'>
+    <img alt="usericon" src= {user?.photoURL} className='h-10 w-10 ml-1 md:ml-4  rounded-full '/>
       <button onClick={handleSignOut} className='font-bold text-white'>(Sign Out)</button>
+      </div>
     </div>)
     }
     

@@ -6,7 +6,9 @@ name:"movies",
 initialState:{
     nowPlayingMovies:null,
     popularMovies:null,
+    topRatedMovies:null,
     trailerVideo:null,
+    upComingMovies:null,
 },
 reducers:{
     
@@ -21,14 +23,28 @@ addPopularMovies :(state,action)=>{
 },
 
 
+
 addTrailerVideo :(state , action) =>{
     state.trailerVideo= action.payload;
 },
+
+addTopRatedMovies:(state,action)=>{
+
+    state.topRatedMovies = action.payload;
+},
+addUpComingMovies:(state,action)=>{
+
+    state.upComingMovies = action.payload;
+},
+
+
+
+
 },
 
 });
 
-export const { addNowPlayingMovies , addTrailerVideo , addPopularMovies} = moviesSlice.actions;
+export const { addNowPlayingMovies , addTrailerVideo , addPopularMovies , addTopRatedMovies ,addUpComingMovies } = moviesSlice.actions;
 
 
 
