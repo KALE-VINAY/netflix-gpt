@@ -109,7 +109,7 @@ const Login = () => {
           ref={name}
           type="text" 
           placeholder="Full name" 
-          className=" p-2 md:p-4 my-2 md:my-4 w-full bg-gray-700 rounded-lg"
+          className=" p-4 my-4 w-full bg-gray-700 rounded-lg"
         />)}
 
 
@@ -117,22 +117,22 @@ const Login = () => {
         ref={email}
           type="text" 
           placeholder="Email address" 
-          className=" p-2 md:p-4 my-2 md:my-4 w-full bg-gray-700 rounded-lg"
+          className=" p-4 my-4 w-full bg-gray-700 rounded-lg"
         />
 
         <input 
         ref={password}
           type="password" 
           placeholder="Password" 
-          className=" p-2 md:p-4 my-2 md:my-4 w-full bg-gray-700 rounded-lg"
+          className=" p-4 my-4 w-full bg-gray-700 rounded-lg"
         />
         
         <p className="text-red-500 font-bold text-lg py-2" >{errorMessage}</p>
 
-        <button className=" p-2 md:p-4 my-3 md:my-6 bg-red-700 w-full rounded-lg" onClick={handleButtonClick}>
+        <button className=" p-4 my-6 bg-red-700 w-full rounded-lg" onClick={handleButtonClick}>
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className=" py-2 md:py-4 cursor-pointer" onClick={toggleSignInForm}>
+        <p className=" py-4 cursor-pointer" onClick={toggleSignInForm}>
           {isSignInForm ? "New to Netflix? Sign up now" : "Already a member? Sign in"}
         </p>
       </form>
